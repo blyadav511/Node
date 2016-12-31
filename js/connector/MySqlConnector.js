@@ -1,7 +1,7 @@
 "use strict";
 
 let mysql = require("mysql2");
-let _ reruire("underscore");
+let _  = require("underscore");
 
 class MySqlConnector {
 
@@ -30,7 +30,7 @@ if(MySqlConnector.pools == undefined){
 			connectionLimit : process.env.TEST_POOL_SIZE | 20,
 			host : process.env.TEST_HOST | "babulal",
 			port : process.env.TEST_PORT | 3600,
-			user : process,env.TEST_USER | "babulal",
+			user : process.env.TEST_USER | "babulal",
 			password : process.env.TEST_PASS | null,
 			database : process.env.TEST_DATABASE | "test"
 		}
@@ -42,3 +42,5 @@ if(MySqlConnector.pools == undefined){
 		});
 	});
 }
+
+module.exports = MySqlConnector;
