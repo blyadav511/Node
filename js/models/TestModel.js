@@ -12,9 +12,16 @@ class TestModel {
 			if(err){
 				return callback(err);
 			}
-			connection.release();
-			return callback(null, "got connected");
-			console.log("herefdfjhdjhdjhjdh");
+			let query = "insert into student SET ?";
+			connection.query(query, params, (err, res) => {
+				connection.release();
+				if(err !=null){
+					console.log("-----err while inserting: " + JSON.stringify(err));
+					return callback(err, null);
+				}
+				console.log("-----res while inserting: " + JSON.stringify(res));
+				return callback(null, res);
+			})		
 		});
 	}
 }

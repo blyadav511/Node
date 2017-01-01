@@ -27,12 +27,12 @@ class MySqlConnector {
 if(MySqlConnector.pools == undefined){
 	let dbConfig = {
 		"test" : {
-			connectionLimit : process.env.TEST_POOL_SIZE | 20,
-			host : process.env.TEST_HOST | "babulal",
-			port : process.env.TEST_PORT | 3600,
-			user : process.env.TEST_USER | "babulal",
-			password : process.env.TEST_PASS | null,
-			database : process.env.TEST_DATABASE | "test"
+			connectionLimit : process.env.TEST_POOL_SIZE || 20,
+			host : process.env.TEST_HOST || "127.0.0.1",
+			port : process.env.TEST_PORT || 3306,
+			user : process.env.TEST_USER || "root",
+			password : process.env.TEST_PASS || "13112015",
+			database : process.env.TEST_DATABASE || "test"
 		}
 	};
 	MySqlConnector.init(dbConfig);
