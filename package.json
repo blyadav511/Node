@@ -1,0 +1,36 @@
+{
+  "name": "Node",
+  "version": "1.0.0",
+  "description": "Test Project",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "async":"~1.5.0",
+    "express":"~4.13.3",
+    "basic-auth-connect":"^1.0.0",
+    "bluebird":"^3.1.1",
+    "body-parser":"~1.14.1",
+    "bunyan":"~1.5.1",
+    "compression":"~1.6.0",
+    "mysql2":"^0.15.8",
+    "underscore":"^1.0.0",
+    "lodash":"^4.5.0"                                                                                                                               
+  },
+  "devDependencies": {
+
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blyadav511/Node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blyadav511/Node/issues"
+  },
+  "homepage": "https://github.com/blyadav511/Node#readme"
+}
